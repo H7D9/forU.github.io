@@ -1,0 +1,36 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.text-block {
+    background: url(pexels-photo-2719301.jpeg);
+    animation: animate 500s infinite linear;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.text{
+    margin-top: 35px;
+    font-size: 120px;
+    color: transparent;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
